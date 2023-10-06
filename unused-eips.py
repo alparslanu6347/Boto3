@@ -4,8 +4,8 @@ import os
 ec2_client = boto3.client('ec2')
 ses_client = boto3.client('ses')
 
-SOURCE_EMAIL = os.environ['aydintokuslu78@gmail.com']
-DEST_EMAIL = os.environ['aydintokuslu78@gmail.com']
+SOURCE_EMAIL = os.environ['alparslanu6347@gmail.com']
+DEST_EMAIL = os.environ['alparslanu6347@gmail.com']
 
 def lambda_handler(event,context):
     response = ec2_client.describe_addresses()

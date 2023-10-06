@@ -6,7 +6,7 @@ import os
 s3 = boto3.resource("s3")
 # my_bucket = s3.Bucket("deneme1-boto3-bucket")
 
-text_file_location=r"C:\Users\aydin\Desktop\boto3\boto3_list.txt"
+text_file_location=r"C:\Users\arrow\Desktop\boto3\boto3_list.txt"
 
 with open(text_file_location,"a") as text_file:
     for bucket in s3.buckets.all():

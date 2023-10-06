@@ -6,7 +6,7 @@ import os
 s3 = boto3.resource("s3")
 
 #bu adresteki objeleri yüklicek
-local_upload_directory=r"C:\Users\aydin\Desktop\my-projects\aws\Project-101-deneme\static-web"
+local_upload_directory=r"C:\Users\arrow\Desktop\my-projects\aws\Project-101-deneme\static-web"
 
 # for bucket in s3.buckets.all():
 my_bucket = s3.Bucket("deneme1-boto3-bucket")
