@@ -1,3 +1,4 @@
+# creating s3 bucket, public-read
 import boto3
 
 aws_resource = boto3.resource("s3")
