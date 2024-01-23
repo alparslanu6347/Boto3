@@ -1,8 +1,6 @@
 import boto3
 
-##########################
 ## Part-1 Create Images ##
-##########################
 
 source_region = 'ap-south-1'
 ec2 = boto3.resource('ec2', region_name=source_region)
@@ -19,9 +17,9 @@ for instance in instances:
 print("Images to be copied {} ".format(image_ids))
 
 
-#############################################
+
 ## Part-2 Wait For Images to be available  ##
-#############################################
+
 # Get waiter for image_available
 
 client = boto3.client('ec2', region_name=source_region)
@@ -33,9 +31,9 @@ waiter.wait(Filters=[{
     'Values': image_ids
 }])
 
-##########################################
+
 ## Part-3 Copy Images to other regions  ##
-##########################################
+
 
 # Copy Images to the region, us-east-1
 
