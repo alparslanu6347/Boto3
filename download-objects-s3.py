@@ -7,7 +7,7 @@ s3 = boto3.resource("s3")
 
 #my_bucket=s3.Bucket("osvaldo-vpc-44")
 
-working_directory = r"C:\Users\aydin\Desktop\boto3\download"
+working_directory = r"C:\Users\Alp\Desktop\boto3\download"
 
 for bucket in s3.buckets.all():
     my_bucket = s3.Bucket(bucket.name)
