@@ -7,7 +7,7 @@ bucket = aws_resource.Bucket("deneme1-boto3-bucket")
 response = bucket.create(
     ACL='public-read',
     CreateBucketConfiguration={
-        'LocationConstraint': 'sa-east-1'
+        'LocationConstraint': 'us-east-1'
     },
 )
 
